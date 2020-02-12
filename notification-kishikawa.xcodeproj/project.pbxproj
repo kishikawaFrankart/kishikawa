@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F4B7E5C08D1F2CD2DEEE675 /* Pods_notification_kishikawa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06046CA99FC4B3A8BDC77093 /* Pods_notification_kishikawa.framework */; };
 		E619E78623F4438F0086CE6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619E78523F4438F0086CE6F /* AppDelegate.swift */; };
 		E619E78823F4438F0086CE6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619E78723F4438F0086CE6F /* SceneDelegate.swift */; };
 		E619E78A23F4438F0086CE6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E619E78923F4438F0086CE6F /* ContentView.swift */; };
 		E619E78C23F443950086CE6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619E78B23F443950086CE6F /* Assets.xcassets */; };
 		E619E78F23F443950086CE6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619E78E23F443950086CE6F /* Preview Assets.xcassets */; };
 		E619E79223F443950086CE6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E619E79023F443950086CE6F /* LaunchScreen.storyboard */; };
+		E619E79A23F447CB0086CE6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E619E79923F447CB0086CE6F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06046CA99FC4B3A8BDC77093 /* Pods_notification_kishikawa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_notification_kishikawa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DBB2D04514CE36F8C26DC31 /* Pods-notification-kishikawa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notification-kishikawa.release.xcconfig"; path = "Target Support Files/Pods-notification-kishikawa/Pods-notification-kishikawa.release.xcconfig"; sourceTree = "<group>"; };
 		E619E78223F4438F0086CE6F /* notification-kishikawa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "notification-kishikawa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E619E78523F4438F0086CE6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E619E78723F4438F0086CE6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		E619E78E23F443950086CE6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E619E79123F443950086CE6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E619E79323F443950086CE6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E619E79923F447CB0086CE6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ED797DCAA92C025301F718BC /* Pods-notification-kishikawa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notification-kishikawa.debug.xcconfig"; path = "Target Support Files/Pods-notification-kishikawa/Pods-notification-kishikawa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4B7E5C08D1F2CD2DEEE675 /* Pods_notification_kishikawa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		141B77B1BE1B41B7CB01FCBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED797DCAA92C025301F718BC /* Pods-notification-kishikawa.debug.xcconfig */,
+				4DBB2D04514CE36F8C26DC31 /* Pods-notification-kishikawa.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E53E7CF14EC21FA7919C6C57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06046CA99FC4B3A8BDC77093 /* Pods_notification_kishikawa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E619E77923F4438F0086CE6F = {
 			isa = PBXGroup;
 			children = (
 				E619E78423F4438F0086CE6F /* notification-kishikawa */,
 				E619E78323F4438F0086CE6F /* Products */,
+				141B77B1BE1B41B7CB01FCBE /* Pods */,
+				E53E7CF14EC21FA7919C6C57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +89,7 @@
 				E619E78B23F443950086CE6F /* Assets.xcassets */,
 				E619E79023F443950086CE6F /* LaunchScreen.storyboard */,
 				E619E79323F443950086CE6F /* Info.plist */,
+				E619E79923F447CB0086CE6F /* GoogleService-Info.plist */,
 				E619E78D23F443950086CE6F /* Preview Content */,
 			);
 			path = "notification-kishikawa";
@@ -82,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E619E79623F443950086CE6F /* Build configuration list for PBXNativeTarget "notification-kishikawa" */;
 			buildPhases = (
+				510C19A36C1757C43DB009CF /* [CP] Check Pods Manifest.lock */,
 				E619E77E23F4438F0086CE6F /* Sources */,
 				E619E77F23F4438F0086CE6F /* Frameworks */,
 				E619E78023F4438F0086CE6F /* Resources */,
+				173549B4D118CCE36871CDAD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +164,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				E619E79223F443950086CE6F /* LaunchScreen.storyboard in Resources */,
+				E619E79A23F447CB0086CE6F /* GoogleService-Info.plist in Resources */,
 				E619E78F23F443950086CE6F /* Preview Assets.xcassets in Resources */,
 				E619E78C23F443950086CE6F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		173549B4D118CCE36871CDAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-notification-kishikawa/Pods-notification-kishikawa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-notification-kishikawa/Pods-notification-kishikawa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-notification-kishikawa/Pods-notification-kishikawa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		510C19A36C1757C43DB009CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-notification-kishikawa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E619E77E23F4438F0086CE6F /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		E619E79723F443950086CE6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED797DCAA92C025301F718BC /* Pods-notification-kishikawa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +376,7 @@
 		};
 		E619E79823F443950086CE6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DBB2D04514CE36F8C26DC31 /* Pods-notification-kishikawa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
