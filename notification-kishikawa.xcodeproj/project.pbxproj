@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		E619E78F23F443950086CE6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619E78E23F443950086CE6F /* Preview Assets.xcassets */; };
 		E619E79223F443950086CE6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E619E79023F443950086CE6F /* LaunchScreen.storyboard */; };
 		E619E79A23F447CB0086CE6F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E619E79923F447CB0086CE6F /* GoogleService-Info.plist */; };
+		E619E823240426E30086CE6F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E619E822240426E30086CE6F /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		E619E79123F443950086CE6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E619E79323F443950086CE6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E619E79923F447CB0086CE6F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E619E821240426E30086CE6F /* notification-kishikawa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "notification-kishikawa.entitlements"; sourceTree = "<group>"; };
+		E619E822240426E30086CE6F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		ED797DCAA92C025301F718BC /* Pods-notification-kishikawa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-notification-kishikawa.debug.xcconfig"; path = "Target Support Files/Pods-notification-kishikawa/Pods-notification-kishikawa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -38,6 +41,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F4B7E5C08D1F2CD2DEEE675 /* Pods_notification_kishikawa.framework in Frameworks */,
+				E619E823240426E30086CE6F /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,13 +54,13 @@
 				ED797DCAA92C025301F718BC /* Pods-notification-kishikawa.debug.xcconfig */,
 				4DBB2D04514CE36F8C26DC31 /* Pods-notification-kishikawa.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		E53E7CF14EC21FA7919C6C57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E619E822240426E30086CE6F /* AudioToolbox.framework */,
 				06046CA99FC4B3A8BDC77093 /* Pods_notification_kishikawa.framework */,
 			);
 			name = Frameworks;
@@ -83,6 +87,7 @@
 		E619E78423F4438F0086CE6F /* notification-kishikawa */ = {
 			isa = PBXGroup;
 			children = (
+				E619E821240426E30086CE6F /* notification-kishikawa.entitlements */,
 				E619E78523F4438F0086CE6F /* AppDelegate.swift */,
 				E619E78723F4438F0086CE6F /* SceneDelegate.swift */,
 				E619E78923F4438F0086CE6F /* ContentView.swift */,
@@ -289,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -343,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -358,17 +363,21 @@
 			baseConfigurationReference = ED797DCAA92C025301F718BC /* Pods-notification-kishikawa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "notification-kishikawa/notification-kishikawa.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"notification-kishikawa/Preview Content\"";
 				DEVELOPMENT_TEAM = 5JX85HNTDS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "notification-kishikawa/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.mk.8811m.19bb.notification-kishikawa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -379,17 +388,21 @@
 			baseConfigurationReference = 4DBB2D04514CE36F8C26DC31 /* Pods-notification-kishikawa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "notification-kishikawa/notification-kishikawa.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"notification-kishikawa/Preview Content\"";
 				DEVELOPMENT_TEAM = 5JX85HNTDS;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "notification-kishikawa/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.mk.8811m.19bb.notification-kishikawa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
